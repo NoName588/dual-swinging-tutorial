@@ -309,7 +309,7 @@ public class DualHooks : MonoBehaviour
             // the distance grapple will try to keep from grapple point.
             UpdateJoints(distanceFromPoint);
 
-            print("shorten " + Time.time);
+           // print("shorten " + Time.time);
         }
         // extend cable
         if (Input.GetKey(KeyCode.S))
