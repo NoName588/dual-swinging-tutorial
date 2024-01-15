@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Colision_Canon : MonoBehaviour
 {
-    // Establece el GameObject específico que representará la bala de cañón
+    
     public GameObject balaCanon;
 
     private void OnCollisionEnter(Collision collision)
