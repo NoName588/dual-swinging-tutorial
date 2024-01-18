@@ -45,7 +45,7 @@ public class PlayerMovementDualSwinging : MonoBehaviour
 
     Rigidbody rb;
 
-    private Alteruna.Avatar _avatar;
+    
 
     public MovementState state;
     public enum MovementState
@@ -63,13 +63,10 @@ public class PlayerMovementDualSwinging : MonoBehaviour
     public bool activeGrapple;
     public bool swinging;
 
-    void Start()
+   private void Start()
     {
 
-        _avatar = GetComponent<Alteruna.Avatar>();
-
-        if (!_avatar.IsMe)
-            return;
+    
 
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -77,13 +74,9 @@ public class PlayerMovementDualSwinging : MonoBehaviour
         readyToJump = true;
     }
 
-    void Update()
+    private void Update()
     {
-        if (!_avatar.IsMe)
-            return;
-
-        
-
+     
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
