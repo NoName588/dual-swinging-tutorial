@@ -45,8 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fff5e5b4fb9aea4b9ea4d3389c0b5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 5622593400706835105}
   explosionPrefab: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
     type: 3}
+  smokePrefab: {fileID: 100006, guid: a49596ebf788acd4ab1281bffea444b1, type: 3}
   explosionDuration: 3
 --- !u!65 &295552303569720950
 BoxCollider:

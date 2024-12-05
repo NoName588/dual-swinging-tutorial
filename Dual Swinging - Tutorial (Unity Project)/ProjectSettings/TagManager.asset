@@ -8,6 +8,8 @@ TagManager:
   - Body
   - Sword
   - Caballo
+  - FxTemporaire
+  - Titan
   layers:
   - Default
   - TransparentFX
